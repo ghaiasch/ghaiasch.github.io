@@ -1,0 +1,11 @@
+<script>
+window.location.href='myapp://welcome';
+setTimeout(function(){
+  var u=navigator.userAgent.toLowerCase();
+alert("navigator");
+alert(u);
+  if(/android/.test(u))window.location.href='https://play.google.com/store/apps/details?id=com.yourapp.package';
+  else if(/iphone|ipad|ipod/.test(u))window.location.href='https://apps.apple.com/app/id123456789';
+  else window.location.href='https://yourwebsite.com';
+},2000);
+</script>
